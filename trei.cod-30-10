@@ -1,0 +1,17 @@
+create table Estudantes_recentes(
+id int(11),
+nome char(45),
+idade int(89),
+matrícula int (10),
+id_turma int (200),
+primary ley (id));
+
+create table Turmas(
+id_turma int(90),
+nivel int(29),
+lotação int(30)
+primary key(id_turma));
+
+select Turmas.id_turma
+from Turmas inner join Estudantes_recentes
+on Turmas.id_turma = Estudantes_recentes.id_turma
